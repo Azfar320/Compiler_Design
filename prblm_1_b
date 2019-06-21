@@ -1,0 +1,29 @@
+//solution t0 1_a
+#include<stdio.h>
+#include<conio.h>
+
+char digit[]="0123456789";
+
+int main(){
+   char str[] = "Md. Tareq Zaman, Part-3,2011";
+   int length = strlen(str);
+   printf("Letters are: ");
+   for(int item = 0; item<length; item++){
+    if(isalpha(str[item])){
+	printf("%c",str[item]);
+	}
+	}
+	printf("\nDigits are: ");
+	for(int item = 0;item<length;item++){
+	if(isdigit(str[item])){
+	printf("%c",str[item]);
+	}
+	}
+	printf("\nother Characters: ");
+	for(int item =0; item<length;item++){
+	if(!isalpha(str[item]) && !isdigit(str[item])){
+	printf("%c",str[item]);
+	   }
+	}
+	return 0;
+	}

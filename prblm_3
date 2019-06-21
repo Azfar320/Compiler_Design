@@ -1,0 +1,24 @@
+//abbreviate CSE-3141 as Computer Science & Engineering 3rd year, 1st semester, Compiler Desgin, Theory
+#include <stdio.h>
+
+int main()
+
+{
+
+
+    char first[20], second[20], third[20], fourth[20], fifth[20], sixth[20], seventh[20];
+
+       printf("Enter full Sentence: ");
+
+       scanf("%s %s %s %s %s %s %s", first, second, third, fourth, fifth, sixth, seventh);
+
+
+
+       printf("Abbreviated name: ");
+
+
+       printf("%c%c%c-%c%c41", first[0],second[0],third[0],fourth[0],fifth[0]);
+
+       return 0;
+
+}

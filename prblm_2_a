@@ -1,0 +1,29 @@
+// counting number of vowels and consonents
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+  int count, countVowel, countConsonent;
+  char string[100];
+
+  printf("enter string: ");
+  gets(string);
+
+  count=countVowel=countConsonent=0;
+
+  for(count=0;string[count] !='\0';count++){
+    if(string[count]=='a' || string[count]=='e'||string[count]=='i' || string[count]=='o' || string[count] =='u'||
+       string[count]=='A' || string[count]=='E' || string[count]=='I' || string[count]=='O' || string[count]=='U'){
+        countVowel++;
+       }
+
+       else if((string[count]>='a' && string[count]<='z') || (string[count]>='A' && string[count]<='Z')){
+        countConsonent++;
+        }
+
+     }
+
+     printf("Vowels:  %d\nConsonents: %d",countVowel,countConsonent);
+     return 0;
+  }
+
